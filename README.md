@@ -11,6 +11,10 @@ Jump into DevOps World 5th
 
 ## How developer run it
 
+```golang 
+PORT USAGE 8080 
+```
+
 1. go mod download
 2. go build -o ./main ./main.go
 3. ./main 
