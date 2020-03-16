@@ -1,0 +1,17 @@
+image: golang:1.13.3-alpine
+
+
+before_script:
+  - go mod download
+
+stages:
+  - build
+  - run
+
+build:
+  stage: build
+  script: go build -o ./main ./main.go
+
+run:
+  stage: run
+  script: echo "DONE"
